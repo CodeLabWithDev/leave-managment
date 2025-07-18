@@ -1,69 +1,64 @@
-# React + TypeScript + Vite
+# 🎨 Leave Management System – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend client for the **Leave Management System**, built with:
 
-Currently, two official plugins are available:
+- ⚛️ **React** (with TypeScript)
+- 🎨 **Tailwind CSS**
+- 🧩 **shadcn/ui** components
+- ⚡ **Vite** for fast development and build
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Modern UI built with Tailwind & shadcn/ui
+- Role-based dashboards (Employee, Manager, Admin)
+- Apply, approve, reject leave requests
+- JWT-based authentication (using backend API)
+- Reusable components and clean folder structure
+- Type-safe development with TypeScript
+- API integration with Axios / Fetch
+- Toast notifications, modals, and loaders
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ⚙️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React 18+
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- lucide-react (icons)
+- react-router-dom (routing)
+- react-hook-form, zod (form validation)
+- Axios (API calls)
+
+---
+
+## 🚀 Getting Started
+
+### 1 Clone the repo
+
+```bash
+git clone https://github.com/your-username/leave-management-system.git
+cd leave-management-system/frontend
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2 Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 4 Setup environment
+
+```bash
+cp .env.example .env
+```
+
+### 4 Run the app
+
+```bash
+Run the app
 ```
