@@ -1,0 +1,1 @@
+Add your Sequelize migration files here
